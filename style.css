@@ -1,0 +1,104 @@
+/* day-2 style */
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body
+    {
+        /* border: 2px solid; */
+        width: 70%;
+        margin: auto;
+    }
+
+    /* top-header styling */
+    #top-header
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        border-bottom: 1px solid;
+    }
+    #top-header>#social-icon>a
+    {
+        color: #5A5A5A;
+        padding: 5px 10px;
+        border-right: 1px solid;
+    }
+    #top-header>#search-bar>input
+    {
+        border: none;
+        border-left: 1px solid;
+        color: #5A5A5A;
+        padding: 2px 0px 0px 10px;
+        font-family: "Fira Sans",sans-serif;
+        font-weight: bold;
+    }
+    input:focus{
+        outline: none;
+    }
+    #top-header>#search-bar>a
+    {
+        color: #5A5A5A;
+    }
+
+    /* logo section styling */
+    #logo-block
+    {
+        margin-top: 10px;
+        text-align: center;
+    }
+    #logo-block>div
+    {
+    margin-top: 5px;
+    }
+    #logo-block>div>a
+    {
+        font-size: 13px;
+        color: #5a5a5aaf;
+        margin: 0px 10px;
+        font-weight: bold;
+    }
+    #logo-block>div>a:nth-child(odd)
+    {
+        color: #133B5A;
+        font-weight: bold;
+    }
+
+    /* navbar styling */
+    #navbar
+    {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #navbar>a
+    {
+        color: #5a5a5ab8;
+        font-weight: bold;
+    }
+    #navbar>button
+    {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    #navbar>button:nth-last-child(3)
+    {
+        background: #00419B;
+        color: white;
+    }
+    #navbar>button:nth-last-child(2)
+    {
+        background: #FFC000;
+    }
+    #navbar>button:nth-last-child(1)
+    {
+        background-color: white;
+        color: blue;
+        border: 1px solid;
+    }
