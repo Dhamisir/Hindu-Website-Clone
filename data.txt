@@ -1,0 +1,693 @@
+// All Data
+let allData=[
+    // justIn label
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:01:00",
+        news:"Is it unparliamentary to discuss inflation: Priyanka Gandhi slams govt"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:02:00",
+        news:"Syria formally breaks diplomatic ties with Ukraine"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:03:00",
+        news:"Shooting World Cup: India end Changwon campaign with most medals"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:04:00",
+        news:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:05:00",
+        news:"Severe repercussions to food security efforts if Ukraine conflict does not give way to dialogue, diplomacy: India"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:06:00",
+        news:"Is it unparliamentary to discuss inflation: Priyanka Gandhi slams govt"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:07:00",
+        news:"Syria formally breaks diplomatic ties with Ukraine"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:08:00",
+        news:"Shooting World Cup: India end Changwon campaign with most medals"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:09:00",
+        news:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:10:00",
+        news:"Severe repercussions to food security efforts if Ukraine conflict does not give way to dialogue, diplomacy: India"
+    },
+    // multiMedai Data
+    {
+        label:"multiMedia",
+        imglink:"https://th-i.thgim.com/public/incoming/82a9iq/article65589377.ece/alternates/LANDSCAPE_320/1400983310.jpg",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    {
+        label:"multiMedia",
+        imglink:"https://th-i.thgim.com/public/incoming/tiu8er/article65657665.ece/alternates/SQUARE_155/Srivilliputtur%27s_palkova.jpg",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    {
+        label:"multiMedia",
+        imglink:"https://th-i.thgim.com/public/incoming/zaesng/article65653746.ece/alternates/SQUARE_155/BCC%20-%20Thumb%202.jpg",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    {
+        label:"multiMedia",
+        imglink:"https://www.thehindu.com/news/national/talking-politics-with-nistula-hebbar-decoding-the-upcoming-presidential-elections/article65650624.ece?homepage=true",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    {
+        label:"multiMedia",
+        imglink:"https://th-i.thgim.com/public/incoming/2588ws/article65661269.ece/alternates/LANDSCAPE_320/IMG_WhatsApp_Image_2022-_2_1_DRA14G2V.jpg",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    // word Data
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/5quhgu/article65660670.ece/alternates/LANDSCAPE_100/Pride_Parades_39226.jpg-8c3ed.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"U.S. House passes same-sex marriage bill in retort to high court"
+    },
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/5quhgu/article65660670.ece/alternates/LANDSCAPE_100/Pride_Parades_39226.jpg-8c3ed.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"U.S. House passes same-sex marriage bill in retort to high court"
+    },
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/5quhgu/article65660670.ece/alternates/LANDSCAPE_100/Pride_Parades_39226.jpg-8c3ed.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"U.S. House passes same-sex marriage bill in retort to high court"
+    },
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/5quhgu/article65660670.ece/alternates/LANDSCAPE_100/Pride_Parades_39226.jpg-8c3ed.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"U.S. House passes same-sex marriage bill in retort to high court"
+    },
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/vivchr/article65661228.ece/alternates/LANDSCAPE_320/1409823278.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"Ranil Wickremesinghe elected President of Sri Lanka in Parliament vote"
+    },
+    // india Data
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/news/national/w0kcd8/article65659739.ece/alternates/LANDSCAPE_100/PTI07_19_2022_000215B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Sri Lanka failed to show fiscal prudence, India's help unprecedented : Jaishankar"
+    },
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/news/national/w0kcd8/article65659739.ece/alternates/LANDSCAPE_100/PTI07_19_2022_000215B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Sri Lanka failed to show fiscal prudence, India's help unprecedented : Jaishankar"
+    },
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/news/national/w0kcd8/article65659739.ece/alternates/LANDSCAPE_100/PTI07_19_2022_000215B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Sri Lanka failed to show fiscal prudence, India's help unprecedented : Jaishankar"
+    },
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/news/national/w0kcd8/article65659739.ece/alternates/LANDSCAPE_100/PTI07_19_2022_000215B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Sri Lanka failed to show fiscal prudence, India's help unprecedented : Jaishankar"
+    },
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/incoming/hfl957/article65660823.ece/alternates/LANDSCAPE_320/PTI07_19_2022_000109B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Parliament Monsoon Session live updates | Rajya Sabha, Lok Sabha resume amid sloganeering"
+    },
+    // state Data
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/yceuo2/article65659271.ece/alternates/LANDSCAPE_100/IMG_10237_8_7_2022_17_57_2_1_02A0SVH0.jpg",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"Why silent when height of Polavaram was increased?"
+    },
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/yceuo2/article65659271.ece/alternates/LANDSCAPE_100/IMG_10237_8_7_2022_17_57_2_1_02A0SVH0.jpg",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"Why silent when height of Polavaram was increased?"
+    },
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/yceuo2/article65659271.ece/alternates/LANDSCAPE_100/IMG_10237_8_7_2022_17_57_2_1_02A0SVH0.jpg",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"Why silent when height of Polavaram was increased?"
+    },
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/yceuo2/article65659271.ece/alternates/LANDSCAPE_100/IMG_10237_8_7_2022_17_57_2_1_02A0SVH0.jpg",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"Why silent when height of Polavaram was increased?"
+    },
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/vm3ahj/article65659787.ece/alternates/LANDSCAPE_320/1693_24_8_2021_16_30_6_2_TAMBARAM_CHENGALPATTU_THIRD_LINE_06.JPG",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"More trains to run on Chengalpattu-Tambaram third line from August"
+    },
+    // city Data
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/incoming/ekf7lp/article65661309.ece/alternates/LANDSCAPE_100/80725_20_7_2022_13_12_44_1_CMATCHAMUNDIHILL%281%29.JPG",
+        heading:"S. VIJAY KUMAR",
+        para:"Karnataka CM Basavaraj Bommai takes swipe at Congress leader DK Shivakumar's 'CM ambition'"
+    },
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/incoming/ekf7lp/article65661309.ece/alternates/LANDSCAPE_100/80725_20_7_2022_13_12_44_1_CMATCHAMUNDIHILL%281%29.JPG",
+        heading:"S. VIJAY KUMAR",
+        para:"Karnataka CM Basavaraj Bommai takes swipe at Congress leader DK Shivakumar's 'CM ambition'"
+    },
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/incoming/ekf7lp/article65661309.ece/alternates/LANDSCAPE_100/80725_20_7_2022_13_12_44_1_CMATCHAMUNDIHILL%281%29.JPG",
+        heading:"S. VIJAY KUMAR",
+        para:"Karnataka CM Basavaraj Bommai takes swipe at Congress leader DK Shivakumar's 'CM ambition'"
+    },
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/incoming/ekf7lp/article65661309.ece/alternates/LANDSCAPE_100/80725_20_7_2022_13_12_44_1_CMATCHAMUNDIHILL%281%29.JPG",
+        heading:"S. VIJAY KUMAR",
+        para:"Karnataka CM Basavaraj Bommai takes swipe at Congress leader DK Shivakumar's 'CM ambition'"
+    },
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/news/national/tamil-nadu/rhw76m/article65660984.ece/alternates/LANDSCAPE_320/NIA%20Special%20Camp%20Tiruchi.jpeg",
+        heading:"S. VIJAY KUMAR",
+        para:"NIA launches searches in Tiruchi Special Camp"
+    },
+    // sports Data
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/63n1kc/article65661135.ece/alternates/LANDSCAPE_100/IMG_1693_14_6_2022_21_55_2_1_FUA11BN3.jpg",
+        heading:"fail dope test",
+        para:"Commonwealth Games bound sprinter Dhanalakshmi, triple jumper Aishwarya Babu"
+    },
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/63n1kc/article65661135.ece/alternates/LANDSCAPE_100/IMG_1693_14_6_2022_21_55_2_1_FUA11BN3.jpg",
+        heading:"fail dope test",
+        para:"Commonwealth Games bound sprinter Dhanalakshmi, triple jumper Aishwarya Babu"
+    },
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/63n1kc/article65661135.ece/alternates/LANDSCAPE_100/IMG_1693_14_6_2022_21_55_2_1_FUA11BN3.jpg",
+        heading:"fail dope test",
+        para:"Commonwealth Games bound sprinter Dhanalakshmi, triple jumper Aishwarya Babu"
+    },
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/63n1kc/article65661135.ece/alternates/LANDSCAPE_100/IMG_1693_14_6_2022_21_55_2_1_FUA11BN3.jpg",
+        heading:"fail dope test",
+        para:"Commonwealth Games bound sprinter Dhanalakshmi, triple jumper Aishwarya Babu"
+    },
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/atfurw/article65661394.ece/alternates/LANDSCAPE_320/PTI07_20_2022_000053B.jpg",
+        heading:"PTI",
+        para:"India had won all five ISSF World Cup stages in 2019, one in the curtailed 2021 season and yet again this year in the first stage in Cairo"
+    },
+    // business Data
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/yi055m/article65661366.ece/alternates/LANDSCAPE_100/DSC_1713.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/yi055m/article65661366.ece/alternates/LANDSCAPE_100/DSC_1713.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/yi055m/article65661366.ece/alternates/LANDSCAPE_100/DSC_1713.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/yi055m/article65661366.ece/alternates/LANDSCAPE_100/DSC_1713.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/fokauh/article65657731.ece/alternates/LANDSCAPE_320/IMG_bl02_think1-Mid_GQHA_2_1_BHA0PHR2.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Revenue collections from the GST regime have fallen short of expectations for both the Centre and the States, says a new working paper by the National Institute of Public Finance and Policy"
+    },
+    // science Data
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/nw82j8/article65646919.ece/alternates/LANDSCAPE_100/PTI31-07-2020_000029B.jpgG",
+        heading:"R. PRASAD",
+        para:"Wastewater surveillance for COVID-19 reveals dynamics of infection" 
+    },
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/nw82j8/article65646919.ece/alternates/LANDSCAPE_100/PTI31-07-2020_000029B.jpgG",
+        heading:"R. PRASAD",
+        para:"Wastewater surveillance for COVID-19 reveals dynamics of infection" 
+    },
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/nw82j8/article65646919.ece/alternates/LANDSCAPE_100/PTI31-07-2020_000029B.jpgG",
+        heading:"R. PRASAD",
+        para:"Wastewater surveillance for COVID-19 reveals dynamics of infection" 
+    },
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/nw82j8/article65646919.ece/alternates/LANDSCAPE_100/PTI31-07-2020_000029B.jpgG",
+        heading:"R. PRASAD",
+        para:"Wastewater surveillance for COVID-19 reveals dynamics of infection" 
+    },
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/kqhiej/article65647685.ece/alternates/LANDSCAPE_320/Science.JPG",
+        heading:"R. PRASAD",
+        para:"COVID-19: More retractions in journals than preprint" 
+    },
+    // technology Data
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/incoming/kos23c/article65660785.ece/alternates/LANDSCAPE_100/AFP_I433D.jpg",
+        heading:"R. PRASAD",
+        para:"Google faces $1 billion UK trial over app store pricing" 
+    },
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/incoming/kos23c/article65660785.ece/alternates/LANDSCAPE_100/AFP_I433D.jpg",
+        heading:"R. PRASAD",
+        para:"Google faces $1 billion UK trial over app store pricing" 
+    },
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/incoming/kos23c/article65660785.ece/alternates/LANDSCAPE_100/AFP_I433D.jpg",
+        heading:"R. PRASAD",
+        para:"Google faces $1 billion UK trial over app store pricing" 
+    },
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/incoming/kos23c/article65660785.ece/alternates/LANDSCAPE_100/AFP_I433D.jpg",
+        heading:"R. PRASAD",
+        para:"Google faces $1 billion UK trial over app store pricing" 
+    },   
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/news/international/hzri8/article65659622.ece/alternates/LANDSCAPE_320/AFP_32EW8NY.jpg",
+        heading:"AP",
+        para:"Judge sets October trial for Musk-Twitter takeover dispute" 
+    }
+]
+
+// justIn Data
+let justIn=[
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:01:00",
+        news:"Is it unparliamentary to discuss inflation: Priyanka Gandhi slams govt"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:02:00",
+        news:"Syria formally breaks diplomatic ties with Ukraine"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:03:00",
+        news:"Shooting World Cup: India end Changwon campaign with most medals"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:04:00",
+        news:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:05:00",
+        news:"Severe repercussions to food security efforts if Ukraine conflict does not give way to dialogue, diplomacy: India"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:06:00",
+        news:"Is it unparliamentary to discuss inflation: Priyanka Gandhi slams govt"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:07:00",
+        news:"Syria formally breaks diplomatic ties with Ukraine"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:08:00",
+        news:"Shooting World Cup: India end Changwon campaign with most medals"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:09:00",
+        news:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"JustIn",
+        dateTime:"7/20/2022, 2:10:00",
+        news:"Severe repercussions to food security efforts if Ukraine conflict does not give way to dialogue, diplomacy: India"
+    }
+]
+
+// multiMedia  Data
+let multiMedia=[
+    {
+        label:"multiMedia",
+        imglink:"https://th-i.thgim.com/public/incoming/82a9iq/article65589377.ece/alternates/LANDSCAPE_320/1400983310.jpg",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    {
+        label:"multiMedia",
+        imglink:"https://th-i.thgim.com/public/incoming/tiu8er/article65657665.ece/alternates/SQUARE_155/Srivilliputtur%27s_palkova.jpg",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    {
+        label:"multiMedia",
+        imglink:"https://th-i.thgim.com/public/incoming/zaesng/article65653746.ece/alternates/SQUARE_155/BCC%20-%20Thumb%202.jpg",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    {
+        label:"multiMedia",
+        imglink:"https://www.thehindu.com/news/national/talking-politics-with-nistula-hebbar-decoding-the-upcoming-presidential-elections/article65650624.ece?homepage=true",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    },
+    {
+        label:"multiMedia",
+        imglink:"https://th-i.thgim.com/public/incoming/2588ws/article65661269.ece/alternates/LANDSCAPE_320/IMG_WhatsApp_Image_2022-_2_1_DRA14G2V.jpg",
+        redirect:"https://www.thehindu.com/",
+        title:"Watch | Is that poet Thiruvalluvar on a field?"
+    }
+]
+
+// word Data
+let word=[
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/5quhgu/article65660670.ece/alternates/LANDSCAPE_100/Pride_Parades_39226.jpg-8c3ed.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"U.S. House passes same-sex marriage bill in retort to high court"
+    },
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/5quhgu/article65660670.ece/alternates/LANDSCAPE_100/Pride_Parades_39226.jpg-8c3ed.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"U.S. House passes same-sex marriage bill in retort to high court"
+    },
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/5quhgu/article65660670.ece/alternates/LANDSCAPE_100/Pride_Parades_39226.jpg-8c3ed.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"U.S. House passes same-sex marriage bill in retort to high court"
+    },
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/5quhgu/article65660670.ece/alternates/LANDSCAPE_100/Pride_Parades_39226.jpg-8c3ed.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"U.S. House passes same-sex marriage bill in retort to high court"
+    },
+    {
+        label:"word",
+        imglink:"https://th-i.thgim.com/public/incoming/vivchr/article65661228.ece/alternates/LANDSCAPE_320/1409823278.jpg",
+        heading:"MEERA SRINIVASAN",
+        para:"Ranil Wickremesinghe elected President of Sri Lanka in Parliament vote"
+    }
+]
+
+// india Data
+let india=[
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/news/national/w0kcd8/article65659739.ece/alternates/LANDSCAPE_100/PTI07_19_2022_000215B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Sri Lanka failed to show fiscal prudence, India's help unprecedented : Jaishankar"
+    },
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/news/national/w0kcd8/article65659739.ece/alternates/LANDSCAPE_100/PTI07_19_2022_000215B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Sri Lanka failed to show fiscal prudence, India's help unprecedented : Jaishankar"
+    },
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/news/national/w0kcd8/article65659739.ece/alternates/LANDSCAPE_100/PTI07_19_2022_000215B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Sri Lanka failed to show fiscal prudence, India's help unprecedented : Jaishankar"
+    },
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/news/national/w0kcd8/article65659739.ece/alternates/LANDSCAPE_100/PTI07_19_2022_000215B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Sri Lanka failed to show fiscal prudence, India's help unprecedented : Jaishankar"
+    },
+    {
+        label:"india",
+        imglink:"https://th-i.thgim.com/public/incoming/hfl957/article65660823.ece/alternates/LANDSCAPE_320/PTI07_19_2022_000109B.jpg",
+        heading:"THE HINDU BUREAU",
+        para:"Parliament Monsoon Session live updates | Rajya Sabha, Lok Sabha resume amid sloganeering"
+    }
+]
+
+// state Data
+let state=[
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/yceuo2/article65659271.ece/alternates/LANDSCAPE_100/IMG_10237_8_7_2022_17_57_2_1_02A0SVH0.jpg",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"Why silent when height of Polavaram was increased?"
+    },
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/yceuo2/article65659271.ece/alternates/LANDSCAPE_100/IMG_10237_8_7_2022_17_57_2_1_02A0SVH0.jpg",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"Why silent when height of Polavaram was increased?"
+    },
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/yceuo2/article65659271.ece/alternates/LANDSCAPE_100/IMG_10237_8_7_2022_17_57_2_1_02A0SVH0.jpg",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"Why silent when height of Polavaram was increased?"
+    },
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/yceuo2/article65659271.ece/alternates/LANDSCAPE_100/IMG_10237_8_7_2022_17_57_2_1_02A0SVH0.jpg",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"Why silent when height of Polavaram was increased?"
+    },
+    {
+        label:"state",
+        imglink:"https://th-i.thgim.com/public/incoming/vm3ahj/article65659787.ece/alternates/LANDSCAPE_320/1693_24_8_2021_16_30_6_2_TAMBARAM_CHENGALPATTU_THIRD_LINE_06.JPG",
+        heading:"SPECIAL CORRESPONDENT",
+        para:"More trains to run on Chengalpattu-Tambaram third line from August"
+    }
+]
+
+// city Data
+let city=[
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/incoming/ekf7lp/article65661309.ece/alternates/LANDSCAPE_100/80725_20_7_2022_13_12_44_1_CMATCHAMUNDIHILL%281%29.JPG",
+        heading:"S. VIJAY KUMAR",
+        para:"Karnataka CM Basavaraj Bommai takes swipe at Congress leader DK Shivakumar's 'CM ambition'"
+    },
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/incoming/ekf7lp/article65661309.ece/alternates/LANDSCAPE_100/80725_20_7_2022_13_12_44_1_CMATCHAMUNDIHILL%281%29.JPG",
+        heading:"S. VIJAY KUMAR",
+        para:"Karnataka CM Basavaraj Bommai takes swipe at Congress leader DK Shivakumar's 'CM ambition'"
+    },
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/incoming/ekf7lp/article65661309.ece/alternates/LANDSCAPE_100/80725_20_7_2022_13_12_44_1_CMATCHAMUNDIHILL%281%29.JPG",
+        heading:"S. VIJAY KUMAR",
+        para:"Karnataka CM Basavaraj Bommai takes swipe at Congress leader DK Shivakumar's 'CM ambition'"
+    },
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/incoming/ekf7lp/article65661309.ece/alternates/LANDSCAPE_100/80725_20_7_2022_13_12_44_1_CMATCHAMUNDIHILL%281%29.JPG",
+        heading:"S. VIJAY KUMAR",
+        para:"Karnataka CM Basavaraj Bommai takes swipe at Congress leader DK Shivakumar's 'CM ambition'"
+    },
+    {
+        label:"city",
+        imglink:"https://th-i.thgim.com/public/news/national/tamil-nadu/rhw76m/article65660984.ece/alternates/LANDSCAPE_320/NIA%20Special%20Camp%20Tiruchi.jpeg",
+        heading:"S. VIJAY KUMAR",
+        para:"NIA launches searches in Tiruchi Special Camp"
+    }
+]
+
+// sports Data
+let sports=[
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/63n1kc/article65661135.ece/alternates/LANDSCAPE_100/IMG_1693_14_6_2022_21_55_2_1_FUA11BN3.jpg",
+        heading:"fail dope test",
+        para:"Commonwealth Games bound sprinter Dhanalakshmi, triple jumper Aishwarya Babu"
+    },
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/63n1kc/article65661135.ece/alternates/LANDSCAPE_100/IMG_1693_14_6_2022_21_55_2_1_FUA11BN3.jpg",
+        heading:"fail dope test",
+        para:"Commonwealth Games bound sprinter Dhanalakshmi, triple jumper Aishwarya Babu"
+    },
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/63n1kc/article65661135.ece/alternates/LANDSCAPE_100/IMG_1693_14_6_2022_21_55_2_1_FUA11BN3.jpg",
+        heading:"fail dope test",
+        para:"Commonwealth Games bound sprinter Dhanalakshmi, triple jumper Aishwarya Babu"
+    },
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/63n1kc/article65661135.ece/alternates/LANDSCAPE_100/IMG_1693_14_6_2022_21_55_2_1_FUA11BN3.jpg",
+        heading:"fail dope test",
+        para:"Commonwealth Games bound sprinter Dhanalakshmi, triple jumper Aishwarya Babu"
+    },
+    {
+        label:"sports",
+        imglink:"https://th-i.thgim.com/public/incoming/atfurw/article65661394.ece/alternates/LANDSCAPE_320/PTI07_20_2022_000053B.jpg",
+        heading:"PTI",
+        para:"India had won all five ISSF World Cup stages in 2019, one in the curtailed 2021 season and yet again this year in the first stage in Cairo"
+    }
+]
+
+// business Data
+let business=[
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/yi055m/article65661366.ece/alternates/LANDSCAPE_100/DSC_1713.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/yi055m/article65661366.ece/alternates/LANDSCAPE_100/DSC_1713.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/yi055m/article65661366.ece/alternates/LANDSCAPE_100/DSC_1713.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/yi055m/article65661366.ece/alternates/LANDSCAPE_100/DSC_1713.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Sentiments in real estate sector dip in June quarter but remain positive"
+    },
+    {
+        label:"business",
+        imglink:"https://th-i.thgim.com/public/incoming/fokauh/article65657731.ece/alternates/LANDSCAPE_320/IMG_bl02_think1-Mid_GQHA_2_1_BHA0PHR2.jpg",
+        heading:"VIKAS DHOOT",
+        para:"Revenue collections from the GST regime have fallen short of expectations for both the Centre and the States, says a new working paper by the National Institute of Public Finance and Policy"
+    }
+]
+
+// science Data
+let science=[
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/nw82j8/article65646919.ece/alternates/LANDSCAPE_100/PTI31-07-2020_000029B.jpgG",
+        heading:"R. PRASAD",
+        para:"Wastewater surveillance for COVID-19 reveals dynamics of infection" 
+    },
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/nw82j8/article65646919.ece/alternates/LANDSCAPE_100/PTI31-07-2020_000029B.jpgG",
+        heading:"R. PRASAD",
+        para:"Wastewater surveillance for COVID-19 reveals dynamics of infection" 
+    },
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/nw82j8/article65646919.ece/alternates/LANDSCAPE_100/PTI31-07-2020_000029B.jpgG",
+        heading:"R. PRASAD",
+        para:"Wastewater surveillance for COVID-19 reveals dynamics of infection" 
+    },
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/nw82j8/article65646919.ece/alternates/LANDSCAPE_100/PTI31-07-2020_000029B.jpgG",
+        heading:"R. PRASAD",
+        para:"Wastewater surveillance for COVID-19 reveals dynamics of infection" 
+    },
+    {
+        label:"science",
+        imglink:"https://th-i.thgim.com/public/incoming/kqhiej/article65647685.ece/alternates/LANDSCAPE_320/Science.JPG",
+        heading:"R. PRASAD",
+        para:"COVID-19: More retractions in journals than preprint" 
+    }
+]
+
+// technology Data
+let technology=[
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/incoming/kos23c/article65660785.ece/alternates/LANDSCAPE_100/AFP_I433D.jpg",
+        heading:"R. PRASAD",
+        para:"Google faces $1 billion UK trial over app store pricing" 
+    },
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/incoming/kos23c/article65660785.ece/alternates/LANDSCAPE_100/AFP_I433D.jpg",
+        heading:"R. PRASAD",
+        para:"Google faces $1 billion UK trial over app store pricing" 
+    },
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/incoming/kos23c/article65660785.ece/alternates/LANDSCAPE_100/AFP_I433D.jpg",
+        heading:"R. PRASAD",
+        para:"Google faces $1 billion UK trial over app store pricing" 
+    },
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/incoming/kos23c/article65660785.ece/alternates/LANDSCAPE_100/AFP_I433D.jpg",
+        heading:"R. PRASAD",
+        para:"Google faces $1 billion UK trial over app store pricing" 
+    },   
+    {
+        label:"technology",
+        imglink:"https://th-i.thgim.com/public/news/international/hzri8/article65659622.ece/alternates/LANDSCAPE_320/AFP_32EW8NY.jpg",
+        heading:"AP",
+        para:"Judge sets October trial for Musk-Twitter takeover dispute" 
+    }
+]
