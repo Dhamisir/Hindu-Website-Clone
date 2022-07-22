@@ -464,3 +464,206 @@ let technologyFilter=allData.filter(function(ele){
        div1.append(imglink,para) //append imglink and para in div
        multiMedia_news.append(div1) //append div in multimedia_news
     });
+
+// word section
+
+    wordFilter.reverse();
+    wordFilter.forEach(function(ele,index){
+        if(index>5)
+        {
+            return;
+        }
+        let word_news=document.querySelector("#word-news");
+        // create Elements
+        let div1=document.createElement("div");
+        let imglink=document.createElement("img");
+        imglink.setAttribute("src",ele.imglink);
+        let para=document.createElement("p");
+        para.innerText=ele.para;
+        div1.append(imglink,para) //append imglink and para in div
+        word_news.append(div1) //append div in word_news
+    })
+
+// india section
+
+    indiaFilter.reverse();
+    indiaFilter.forEach(function(ele,index){
+        if(index>5)
+        {
+            return;
+        }
+        let india_news=document.querySelector("#india-news");
+        // create Elements
+        let div1=document.createElement("div");
+        let imglink=document.createElement("img");
+        imglink.setAttribute("src",ele.imglink);
+        let para=document.createElement("p");
+        para.innerText=ele.para;
+        div1.append(imglink,para) //append imglink and para in div
+        india_news.append(div1) //append div in india_news
+    });
+
+// state section
+
+    stateFilter.reverse();
+    stateFilter.forEach(function(ele,index){
+        if(index>5)
+        {
+            return;
+        }
+        let state_news=document.querySelector("#state-news");
+        // create Elements
+        let div1=document.createElement("div");
+        let imglink=document.createElement("img");
+        imglink.setAttribute("src",ele.imglink);
+        let para=document.createElement("p");
+        para.innerText=ele.para;
+        div1.append(imglink,para) //append imglink and para in div
+        state_news.append(div1) //append div in state_news
+    });
+
+// city section
+
+    cityFilter.reverse();
+    cityFilter.forEach(function(ele,index){
+        if(index>5)
+        {
+            return;
+        }
+        let city_news=document.querySelector("#city-news");
+        // create Elements
+        let div1=document.createElement("div");
+        let imglink=document.createElement("img");
+        imglink.setAttribute("src",ele.imglink);
+        let para=document.createElement("p");
+        para.innerText=ele.para;
+        div1.append(imglink,para) //append imglink and para in div
+        city_news.append(div1) //append div in city_news
+    });
+
+// sports section
+
+    sportsFilter.reverse();
+    sportsFilter.forEach(function(ele,index){
+        if(index>5)
+        {
+            return;
+        }
+        let sports_news=document.querySelector("#sports-news");
+        // create Elements
+        let div1=document.createElement("div");
+        let imglink=document.createElement("img");
+        imglink.setAttribute("src",ele.imglink);
+        let para=document.createElement("p");
+        para.innerText=ele.para;
+        div1.append(imglink,para) //append imglink and para in div
+        sports_news.append(div1) //append div in sports_news
+    });
+
+// business section
+
+    businessFilter.reverse();
+    businessFilter.forEach(function(ele,index){
+        if(index>5)
+        {
+            return;
+        }
+        let business_news=document.querySelector("#business-news");
+        // create Elements
+        let div1=document.createElement("div");
+        let imglink=document.createElement("img");
+        imglink.setAttribute("src",ele.imglink);
+        let para=document.createElement("p");
+        para.innerText=ele.para;
+        div1.append(imglink,para) //append imglink and para in div
+        business_news.append(div1) //append div in business_news
+    });
+
+// science section
+
+    scienceFilter.reverse();
+    scienceFilter.forEach(function(ele,index){
+        if(index>5)
+        {
+            return;
+        }
+        let science_news=document.querySelector("#science-news");
+        // create Elements
+        let div1=document.createElement("div");
+        let imglink=document.createElement("img");
+        imglink.setAttribute("src",ele.imglink);
+        let para=document.createElement("p");
+        para.innerText=ele.para;
+        div1.append(imglink,para) //append imglink and para in div
+        science_news.append(div1) //append div in science_news
+    });
+
+// technology section
+
+    technologyFilter.reverse();
+    technologyFilter.forEach(function(ele,index){
+        if(index>5)
+        {
+            return;
+        }
+        let technology_news=document.querySelector("#technology-news");
+        // create Elements
+        let div1=document.createElement("div");
+        let imglink=document.createElement("img");
+        imglink.setAttribute("src",ele.imglink);
+        let para=document.createElement("p");
+        para.innerText=ele.para;
+        div1.append(imglink,para) //append imglink and para in div
+        technology_news.append(div1) //append div in technology_news
+    });
+
+// slider section
+
+        let start=0;
+        slider();
+        function next()
+        {
+            start++;
+            slider()
+        }
+
+        function prev()
+        {
+            start--;
+            slider();
+        }
+        
+        function slider()
+        {
+            
+            let slider=document.querySelector("#slider-news");
+            slider.innerHTML="";
+            let count=0;
+            if(start==3)
+            {
+                start=0;
+            }
+            if(start==-1)
+            {
+                start=allLabel.length-5;
+            }
+            for(let i=start; i<allLabel.length; i++)
+            {
+                // console.log(allLabel[i][allLabel[i].length-1])
+                console.log(start)
+                if(count>4)
+                {
+                    break;
+                }
+                let ele=allLabel[i][allLabel[i].length-1]
+                // create elements
+                let div1=document.createElement("div");
+                let img=document.createElement("img");
+                img.setAttribute("src",ele.imglink);
+                let para=document.createElement("p");
+                para.innerText=ele.para;
+                div1.append(img,para); 
+                slider.append(div1);
+                count++; 
+            }
+        }
