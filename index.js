@@ -650,7 +650,7 @@ let technologyFilter=allData.filter(function(ele){
             for(let i=start; i<allLabel.length; i++)
             {
                 // console.log(allLabel[i][allLabel[i].length-1])
-                console.log(start)
+                // console.log(start)
                 if(count>4)
                 {
                     break;
@@ -667,3 +667,76 @@ let technologyFilter=allData.filter(function(ele){
                 count++; 
             }
         }
+
+// subscribe button
+
+        let subscribe=document.querySelector("#subbtn");
+        let subData=JSON.parse(localStorage.getItem("sub"));
+        if(subData!=null)
+        {
+            subscribe.innerText=subData.sub;
+            subscribe.setAttribute("class",subData.class);
+        }
+        subscribe.addEventListener("click",function(){
+            if(subscribe.innerText=="Subscribe Now")
+            {
+                alert("Thankyou for Subscribing The Hindu News");
+                let subObj={
+                    sub:"SUBSCRIBE",
+                    class:"subscribe"
+                }
+                localStorage.setItem("sub",JSON.stringify(subObj));
+                window.location.href="index.html";
+            }
+            else{
+                alert("Unsubscribing The Hindu News");
+                let subObj={
+                    sub:"Subscribe Now",
+                    class:"unsubscribe"
+                }
+                localStorage.setItem("sub",JSON.stringify(subObj));
+                window.location.href="index.html";
+            }      
+        });
+
+// login button
+
+        let ele=JSON.parse(localStorage.getItem("news-user"));  
+        let login=document.querySelector(".login");
+        
+        if(ele!=null)
+        {
+            for(let i=0; i<ele.length; i++)
+            {
+                if(ele[i].flag==true)
+                {
+                    login.innerText="Log Out";
+                }
+            }
+        }
+
+        login.addEventListener("click",function(){
+            if(login.innerText=="Log In")
+            {
+                window.location.href="signin.html";
+            }
+            else
+            {
+                let text = "Are You Sure ?";
+                if (confirm(text) == true) {
+                    alert("logout Succesfully");
+                    for(let i=0; i<ele.length; i++)
+                    {
+                        if(ele[i].flag==true)
+                        {
+                            console.log(ele[i]);
+                            ele[i].flag=false;
+                            localStorage.setItem("news-user",JSON.stringify(ele));
+                            window.location.href="index.html";
+                        }
+                    }
+                }
+            }
+        })
+        
+      
